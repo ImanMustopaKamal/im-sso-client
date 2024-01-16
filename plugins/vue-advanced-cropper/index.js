@@ -1,0 +1,4 @@
+import Vue from "vue";
+import { Cropper } from "vue-advanced-cropper";
+import 'vue-advanced-cropper/dist/style.css'
+Vue.component("vue-advanced-cropper", Cropper);

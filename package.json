@@ -1,0 +1,31 @@
+{
+  "name": "apps-client-web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt --hostname 0.0.0.0",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "amazon-cognito-identity-js": "^6.3.6",
+    "aws-sdk": "^2.1459.0",
+    "bootstrap-vue": "^2.23.1",
+    "cookie-universal-nuxt": "^2.2.2",
+    "dotenv": "^16.0.3",
+    "file-saver": "^2.0.5",
+    "moment-timezone": "^0.5.40",
+    "nuxt": "^2.15.8",
+    "vue": "^2.7.10",
+    "vue-advanced-cropper": "^1.11.6",
+    "vue-select": "^3.20.2",
+    "vue-server-renderer": "^2.7.10",
+    "vue-template-compiler": "^2.7.10"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

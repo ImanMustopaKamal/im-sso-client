@@ -1,0 +1,17 @@
+version: '3.7'
+services:  
+  nuxt:
+    image: {{DOCKER_BUILD_URL}}/{{DOCKER_IMAGE}}
+    deploy:
+      replicas: {{REPLICA}}
+      restart_policy:
+        condition: on-failure
+      update_config:
+        parallelism: 1
+      placement:
+        constraints: [node.role != manager]
+    environment:
+      - NODE_ENV={{TARGET_DEPLOY}}
+      - NUXT_HOST=0.0.0.0
+    ports:
+      - {{APP_PORT}}
